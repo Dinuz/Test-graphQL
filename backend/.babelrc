@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      { "targets": { "node": "current" } }
+    ]
+  ],
+  "sourceMaps": "both",
+  "plugins": [
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "~": ".",
+        "@": "./src",
+        "instance": "./instance"
+      }
+    }]
+  ]
+}
